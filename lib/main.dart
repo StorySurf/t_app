@@ -68,6 +68,12 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-  Future notificationSelected(String payload) async {}
+  Future notificationSelected(String payload) async {
+    showDialog(context: context,
+    builder: (context) => AlertDialog(
+      content: Text("Notification clicked"),
+    ),
+    );
+  }
 
 }
